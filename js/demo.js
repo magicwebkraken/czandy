@@ -1,17 +1,9 @@
 const allLinks = document.querySelectorAll('a');
-if (allLinks) {
-  allLinks.forEach((link) => {
-    const hrefValue = link.getAttribute('href');
-    if (!(hrefValue === '#')) {
-      link.setAttribute('href', '#');
-      link.onclick = () => false;
-    }
-  });
-}
+
 
 function demo() {
   const demoBlock = document.createElement('div');
-  demoBlock.innerText = 'Demo version of the website.';
+  demoBlock.innerText = 'CZANDY';
   demoBlock.style.cssText = `
   pointer-events: none;
   user-select: none;
@@ -22,7 +14,7 @@ function demo() {
   width: auto;
   height: auto;
   padding: 15px;
-  color: red;
+  color: Green;
   font-size: 21px;
   font-weight: 700;
    transition: opacity 0.3s ease 0s;
